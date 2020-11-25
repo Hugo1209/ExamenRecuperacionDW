@@ -1726,10 +1726,10 @@ a.move-top {
   /*-- //Slider automatico --*/
 
 .slider {
-	width: 15%;
+	width: 50%;
 	margin: auto;
 	overflow: hidden;
-	margin-top: 15%;
+	margin-top: 50%;
 }
 
 .slider ul {
@@ -1749,10 +1749,20 @@ a.move-top {
 	list-style: none;
 }
 
+
+
 .slider img {
-	width: 200%;
-	height: 200px;
+	max-width: 100%;
+  }
+
+
+.container-all{
+	position: relative;
+	max-width: 1000px;
+	width: 100%;
+	overflow: hidden;
 }
+
 
 
 @keyframes cambio {
