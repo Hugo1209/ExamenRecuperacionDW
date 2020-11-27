@@ -5,7 +5,7 @@ $Email = $_POST['Email'];
 $Puesto = $_POST['Puesto'];
 
 
-echo "Recibimos... <br>";
+echo "Recibimos... .<br>";
 echo "Nombre: ".$Nombre."<br>";
 echo "Telefono: ".$Telefono."<br>";
 echo "Email: ".$Email."<br>";

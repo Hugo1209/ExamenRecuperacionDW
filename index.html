@@ -14,9 +14,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 
 
-<!-- //Boton -->
-<TITLE></TITLE>
 
+	<!-- //Boton -->
+	<TITLE></TITLE>
+	<SCRIPT languaje="JavaScript">
+	function pulsar();
+	</SCRIPT>
 
 
     <script>
@@ -171,51 +174,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-lg-4 col-md-8 mt-lg-0 mt-5">
 				<div class="padding">
 					<img src="" class="img-fluid" alt="" />
-					<form id ="form1" action="procesar.php" method="post" class= "needs-validation" novalidate>
+					<form action="" class="formulario"  id="formulario">
+					<!--<form id ="form1" action="procesar.php" method="post" class= "needs-validation" novalidate>-->
 						<div class="form-style-agile">
 							<div class="row">
 								<div class="col-12">
-									<input name="Nombre" type="text"  class="form-control" id=Nombre; 
-									placeholder="Nombre" value="" required>
-									<div class="valid-feedback"> Ok válido!</div>
-									<div class="invalid-feedback"> Complete el campo.</div>
+									<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+									<!--<i class="formulario__validacion-estado fas fa-times-circle"></i>-->
 								</div>
+								<!--<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>-->
 							</div>
 							<div class="row">
 								<div class="col-12">
-									<input name="Telefono" type="text" class="form-control" id="Telefono" 
-									placeholder="Telefono" value ="" required>
-									<div class="valid-feedback"> Ok válido!</div>
-									<div class="invalid-feedback"> Complete el campo.</div>
+									<!--<input type="tel" name="telefono" pattern="[0-8]{8}">-->
+									<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Tel 22225555" pattern="[0-8]{8}">
+									<!--<i class="formulario__validacion-estado fas fa-times-circle"></i>-->									
 								</div>
+								<!--<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>-->
 							</div>
 							<div class="row">
 								<div class="col-12">
-									<input name="Email" type="text" class="form-control" id="Email"
-									placeholder="Email" value ="" required>
-									<div class="valid-feedback"> Ok válido!</div>
-									<div class="invalid-feedback"> Complete el campo.</div>
+									<input type="email" class="formulario__input" name="correo" id="correo" placeholder="Email">
+									<!--<i class="formulario__validacion-estado fas fa-times-circle"></i>-->
 								</div>
+								<!--<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>-->
 							</div>
 							<div class="row">
 								<div class="col-12">
-									<input name="Puesto" type="text" class="form-control" id=Puesto
-									placeholder="Puesto" value ="" name="puesto" required>
-									<div class="valid-feedback"> Ok válido!</div>
-									<div class="invalid-feedback"> Complete el campo.</div>
+									<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Puesto">
+									<!--<i class="formulario__validacion-estado fas fa-times-circle"></i>-->								
 								</div>
+								<!--<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>-->
 							</div>
 							
-							
+		
 							<div class="row">
 								<div class="btn">
-									<button type="reset" 
+									<button type="submit" 
 									name="button1"
-									value="Enviar" onclick="Enviar()">Enviar
+									value="Enviar" onclick="pulsar()">Enviar
 									</button>
+									<!--<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>-->
 								</div>
 							</div>
 							
+
 
 						</div>
 					</form>
